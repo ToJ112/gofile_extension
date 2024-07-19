@@ -1,0 +1,22 @@
+{
+  "name": "gofile-extention",
+  "author": "",
+  "title": "gofile.io downloader",
+  "description": "download from gofile.io",
+  "icon": "img/logo-small-70.png",
+  "version": "1.0.0",
+  "homepage": "",
+  "repository": {
+    "url": ""
+  },
+  "scripts": [
+    {
+      "event": "onResolve",
+      "match": {
+        "urls": ["*://github.com/*"]
+      },
+      "entry": "dist/index.js"
+    }
+  ],
+  "settings": []
+}
